@@ -4,5 +4,11 @@ module.exports = function(app){
     res.status(200).send(uuidv4());
   });
 
+  app.put('/api/v1/inventories/:invrefnumber/assigntasks/:taskrefnumber',(req,res) => {
+    res.status(200).send(uuidv4());
+  });
+  app.put('/api/v1/inventories/:invrefnumber/closetasks/:taskrefnumber',(req,res) => {
+    res.status(200).send(uuidv4());
+  });
   // app.put('/neb/inventories/updateinvstatus',reply);
 }
